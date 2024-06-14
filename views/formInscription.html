@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Formulaire</title>
+</head>
+
+<body class="container">
+    <a class="p-4" href="/login">Se connecter</a>
+    <h2>S'inscrire</h2>
+    <form method="post" action="/addUser">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Prénom</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="emailHelp"
+                required />
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Nom</label>
+            <input type="text" class="form-control" name="lastName" id="lastName" required />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" name="email" id="email" required />
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="password" name="password" required />
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirmer mot de passe</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required />
+        </div>
+        <button type="submit" class="btn btn-primary">S'inscrire</button>
+    </form>
+</body>
+
+</html>
